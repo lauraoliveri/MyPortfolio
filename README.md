@@ -1,5 +1,20 @@
-# Vue 3 + Vite
+# Il Mio Portfolio :)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Ciao! Questa repository contiene il codice sorgente del mio **sito portfolio**, sviluppato utilizzando **Vue.js**.  
+Il progetto nasce con l'obiettivo di presentare la mia esperienza, i progetti realizzati e le mie competenze in ambito front-end.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## 🎨 Design UI/UX (Figma)
+
+Il design del sito è stato interamente realizzato da me tramite **Figma**. 
+Questo è il mio primo progetto realizzato con Figma: sto imparando a utilizzarlo e ho voluto mettermi alla prova curando personalmente il design del sito.
+
+---
+### 🔗 Link al progetto Figma
+
+> [Visualizza il design su Figma]()
+
+### 📷 Anteprime del design
+
+
