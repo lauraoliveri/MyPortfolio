@@ -56,4 +56,19 @@ export default {
 @use 'assets/scss/main' as *;
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+// Import Font
+@font-face {
+  font-family: 'Relashionship of Melodrame';
+  src: url('src/assets//fonts/Relationship_of_melodrame.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Manrope", sans-serif !important; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 </style>
