@@ -6,22 +6,34 @@
   3) Utilizzo del componente
 */
 // 1) Importazione del componente
-import AppHeader from './components/AppHeader.vue';
+import Header from './components/Header.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
+import Contacts from './components/Contacts.vue';
+import Footer from './components/Footer.vue';
+
 
 export default {
   data() {
     return { 
-      count: 0
+      
     }
   },
   // 2) Dichiarazione del componente
   components: {
-    AppHeader
+    Header,
+    Hero,
+    About,
+    Skills,
+    Projects,
+    Contacts,
+    Footer
+
   },
   methods: {
-    incrementCount() {
-      this.count++;
-    }
+    
   }
 }
 </script>
@@ -29,13 +41,14 @@ export default {
 <template>
   <div>
     <!-- 3) Utilizzo del componente -->
-    <AppHeader />
+    <Header/>
+    <Hero />
+    <About/>
+    <Skills />
+    <Projects />
+    <Contacts />
+    <Footer />
     
-    <main>
-      <button class="btn btn-primary" @click="incrementCount()">
-        {{ count }}
-      </button>
-    </main>
   </div>
 </template>
 
