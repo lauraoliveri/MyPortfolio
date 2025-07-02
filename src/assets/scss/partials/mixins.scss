@@ -1,9 +1,2 @@
 @use 'variables' as *;
 
-@mixin main-white-color {
-    color: $mainColor;
-}
-
-@mixin main-blue-color {
-    background-color: $mainColor;
-}
