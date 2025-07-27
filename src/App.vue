@@ -6,7 +6,6 @@
   3) Utilizzo del componente
 */
 // 1) Importazione del componente
-import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Skills from './components/Skills.vue';
@@ -23,7 +22,6 @@ export default {
   },
   // 2) Dichiarazione del componente
   components: {
-    Header,
     Hero,
     About,
     Skills,
@@ -41,7 +39,6 @@ export default {
 <template>
   <div>
     <!-- 3) Utilizzo del componente -->
-    <Header/>
     <Hero />
     <About/>
     <Skills />
