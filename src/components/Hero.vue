@@ -30,7 +30,7 @@ export default {
       <div>
         <!-- Text -->
         <div>
-          <h4>
+          <h4 class="p-0">
             Hi!I'm
           </h4>
         </div>
@@ -42,7 +42,7 @@ export default {
 
         <!-- Job -->
         <div>
-          <h3>
+          <h3 class="pb-4">
             Full-Stack Web Developer
           </h3>   
         </div>
@@ -146,9 +146,7 @@ section {
   h2{
     color: black;
     text-decoration: none;
-    font-family: 'Relashionship of Melodrame', sans-serif;
-
-    
+    font-family: 'Relashionship of Melodrame', sans-serif;  
   }
 
   p{
