@@ -9,8 +9,7 @@ export default {
 </script>
 
 <template>
-  <section>
-
+  <section> 
     <!-- Title -->
     <div>
       <h2 class="py-5">
