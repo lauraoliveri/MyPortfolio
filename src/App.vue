@@ -68,4 +68,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
+*::selection {
+  background-color: $blue;
+}
 </style>
