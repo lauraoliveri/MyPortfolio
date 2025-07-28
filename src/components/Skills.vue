@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="skills">
     <h2 class="py-5">
       SKILLS
     </h2>

@@ -9,16 +9,16 @@ export default {
 </script>
 
 <template>
-  <div class="bg_container">
+  <div class="bg_container" id="about">
     <!-- Navbar with links -->
      
     <nav id="content">
         <div class="nav-container">
             <div class="nav-links mx-5">
                 <ul class="d-flex  justify-content-center">
-                    <li class="fs-5 fw-semibold"><a href="#">ABOUT</a></li>
-                    <li class="fs-5 fw-semibold"><a href="#">SKILLS</a></li>
-                    <li class="fs-5 fw-semibold"><a href="#">CONTACTS</a></li>
+                    <li class="fs-5 fw-semibold"><a href="#about">ABOUT</a></li>
+                    <li class="fs-5 fw-semibold"><a href="#skills">SKILLS</a></li>
+                    <li class="fs-5 fw-semibold"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </div>
         </div>

@@ -18,7 +18,9 @@ export default {
           </div>
         </div>
         <div  class="yellow_bg back_to">
+          <a href="#about">
             BACK TO TOP
+          </a>
         </div>
        
         <div>
@@ -63,9 +65,12 @@ footer {
   padding: 1px;
 }
 
-
-
 .back_to{
   width: 105px;
+}
+
+a {
+  text-decoration: none;
+  color: black;  
 }
 </style>

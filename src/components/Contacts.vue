@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section> 
+  <section  id="contacts"> 
     <!-- Title -->
     <div>
       <h2 class="py-5">
