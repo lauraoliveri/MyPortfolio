@@ -9,17 +9,12 @@ export default {
 </script>
 
 <template>
-  <footer>
-    <div class="text-center pt-2">
-        
-        <div class="fs-4 fw-bold yellow_bg symbol">
-          <div>
-            &#8679;
-          </div>
-        </div>
+  <footer class="d-flex justify-content-center">
+    <div class="pt-2">
+      
         <div  class="yellow_bg back_to">
           <a href="#about">
-            BACK TO TOP
+             &#8679; BACK TO TOP
           </a>
         </div>
        
@@ -66,7 +61,7 @@ footer {
 }
 
 .back_to{
-  width: 105px;
+  width: 120px;
 }
 
 a {
