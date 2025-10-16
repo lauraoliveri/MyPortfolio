@@ -60,7 +60,7 @@ section {
 }
 
 h2, h4 {
-  font-family: 'Relashionship of Melodrame', sans-serif;
+  font-family: 'VT323', sans-serif;
 }
 
 .card_c {

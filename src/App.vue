@@ -56,17 +56,15 @@ export default {
 
 // Import Font
 @font-face {
-  font-family: 'Relashionship of Melodrame';
-  src: url('src/assets//fonts/Relationship_of_melodrame.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'UncutSans';
+  src: url('src/assets//fonts/UncutSans-Variable.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
 }
 
 body {
-  font-family: "Manrope", sans-serif !important; 
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "UncutSans", sans-serif !important;
+  font-weight: 500; 
 }
 
 

@@ -117,7 +117,7 @@ ul {
 
 // About me section
 h1 {
-  font-family: 'Relashionship of Melodrame', sans-serif;
+  font-family: 'VT323', sans-serif;
   font-size: 8rem;
   color: black;
 }
@@ -146,7 +146,7 @@ section {
   h2{
     color: black;
     text-decoration: none;
-    font-family: 'Relashionship of Melodrame', sans-serif;  
+    font-family: 'VT323', sans-serif;  
   }
 
   p{
