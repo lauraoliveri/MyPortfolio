@@ -9,24 +9,36 @@ export default {
 </script>
 
 <template>
-  <footer class="d-flex justify-content-center">
-    <div class="pt-2">
-      
-        <div  class="yellow_bg back_to">
-          <a href="#about">
-             &#8679; BACK TO TOP
+  <footer>
+      <!-- Links  -->
+      <div class="pt-2 text-center" id="linkss">
+        <ul >
+          <li class="fs-5"><a href="#home">HOME</a></li>
+          <li class="fs-5"><a href="#about">ABOUT</a></li>
+          <li class="fs-5"><a href="#skills">SKILLS</a></li>
+          <li class="fs-5"><a href="#projects">PROJECTS</a></li>
+        </ul>
+      </div>
+    
+        <div class="text-center" id="icon">
+          <!-- github -->
+          <a href="https://github.com/lauraoliveri" class="pe-3 i-hover">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <!-- linkedin -->
+          <a href="https://www.linkedin.com/in/laura-salvatrice-oliveri-48a5b7216/" class="pe-3 i-hover">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+          <!-- open gmail -->
+          <a href="mailto:laurasalvatrice9@gmail.com?body=Hi!" class="pe-3 i-hover">
+            <i class="fa-solid fa-inbox fa-2xl"></i>
           </a>
         </div>
-       
-        <div>
-            <p class="copyrights pt-3 pb-2">
-                © 2025 Laura Salvatrice Oliveri. All rights reserved. <br>
-                Design & development by me.  <br>
-                Icons by Lordicon, Flaticons, images by Freepik.
-
-            </p>
-        </div>
-    </div>
+        <p class="copyrights text-center">
+            © 2025 Laura Salvatrice Oliveri. All rights reserved. 
+            Design & development by me.  
+            Icons by FontAwesome.
+        </p>
   </footer>
 </template>
 
@@ -35,37 +47,59 @@ export default {
 
 footer {
   width: 100%;
-  height: 180px;
-  background-image: url(../assets/images/8169814.jpg);
-  background-position: center center;    
-  background-repeat: no-repeat;
-  background-size: cover; 
-  color: $custom_white;
+  height: 210px;
+  background-color: $black;
+  color: $white;
 }
 
 .copyrights {
-  color: black;
-  font-size: smaller;
+  color: $pink;
+  font-size: 8px;
   opacity: 0.5;
+  padding-top: 20px;
 }
 
-.symbol {
-  width: 100px;
-  text-align: center;
-}
-
-.yellow_bg {
-  color: black;
-  background-color: $yellow;
-  padding: 1px;
-}
-
-.back_to{
-  width: 120px;
-}
 
 a {
   text-decoration: none;
-  color: black;  
+  color: $pink;  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+    li {
+        :hover {
+            color: $white;
+        }
+
+        a {
+          text-decoration: none; 
+        }
+    }
+     
+}
+
+#linkss{
+  font-family: 'VT323', sans-serif;
+   
+}
+
+#icon {
+  padding-top: 20px;
+}
+
+.i-hover i {
+  color: $pink;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.i-hover:hover i {
+  color: $pink;
+  opacity: 0.5;
+  transform: scale(1.1); /* leggero ingrandimento */
 }
 </style>
