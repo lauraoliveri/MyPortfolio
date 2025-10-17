@@ -1,3 +1,29 @@
+// Color palette
+
 $pink: #fd7e98;
 $white: #FAF9DC;
 $black: #1D1313;
+
+/*
+Bootstrap
+*/
+
+// Customised button
+
+$btn-font-family: 'VT323', monospace;
+$btn-font-weight: 600;
+
+// outline
+$btn-outline-color: $pink;         // text
+$btn-outline-bg: transparent;        // bg 
+$btn-outline-border:$pink;        // border
+$btn-outline-hover-bg:$pink;      // bg hover
+$btn-outline-hover-color: $black;      // text hover
+$btn-outline-hover-border:$pink;  // border hover
+
+// Other
+$btn-outline-border-radius: 10px;
+$btn-outline-padding-y: 0.5rem;
+$btn-outline-padding-x: 1rem;
+$btn-outline-transition: all 0.3s ease;
+

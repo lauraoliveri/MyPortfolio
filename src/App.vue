@@ -69,6 +69,6 @@ body {
 
 
 *::selection {
-  background-color: $blue;
+  background-color: $pink;
 }
 </style>

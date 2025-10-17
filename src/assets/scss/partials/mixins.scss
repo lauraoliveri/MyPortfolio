@@ -1,2 +1,11 @@
 @use 'variables' as *;
 
+// Underline when cursor on section
+
+@mixin underline-on-hover {
+  &:hover {
+    h1 {
+      text-decoration: underline;
+    }
+  }
+}
