@@ -10,7 +10,6 @@ import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
-import Contacts from './components/Contacts.vue';
 import Footer from './components/Footer.vue';
 
 
@@ -26,7 +25,6 @@ export default {
     About,
     Skills,
     Projects,
-    Contacts,
     Footer
 
   },
@@ -43,7 +41,6 @@ export default {
     <About/>
     <Skills />
     <Projects />
-    <Contacts />
     <Footer />
     
   </div>
