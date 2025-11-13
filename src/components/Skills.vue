@@ -13,47 +13,62 @@ export default {
 </script>
 
 <template>
-  <section id="skills">
-    <h2 class="py-5">
-      SKILLS
-    </h2>
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">SKILLS</h1>
 
-    <!-- Icons container -->
-    <div class="items_contaneir">
-      <div class="d-flex flex-wrap">
-        <div v-for="skill in skills" :key="skill.name" class="col-3 skill_item" >
-          <img :src="skill.image" :alt="skill.name" class="skill_img"/>
-          <p class="text-uppercase">{{ skill.name }}</p>
+      <!-- Skills -->
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div
+          v-for="skill in skills"
+          :key="skill.name"
+          class="d-flex flex-column align-items-center skill_item"
+          style="flex: 1 1 calc(20% - 1rem);" 
+        >
+          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2"/>
+          <p class="text-uppercase text-center">{{ skill.name }}</p>
         </div>
       </div>
 
       <!-- Learning -->
-      <h3 class="text-uppercase pb-5 pt-2">
+      <h3 class="text-center text-uppercase mt-5 mb-4">
         Currently Learning:
       </h3>
 
-      <div class="d-flex flex-wrap pb-5"> 
-        <div v-for="skill in currentlyLearning" :key="skill.name" class="col skill_item">
-          <img :src="skill.image" :alt="skill.name" class="skill_img"/>
-          <p class="text-uppercase">{{ skill.name }}</p>
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div
+          v-for="skill in currentlyLearning"
+          :key="skill.name"
+          class="d-flex flex-column align-items-center skill_item"
+          style="flex: 1 1 calc(20% - 1rem);"
+        >
+          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2"/>
+          <p class="text-uppercase text-center">{{ skill.name }}</p>
         </div>
       </div>
     </div>
-    <hr class="my-0 pb-4" />
   </section>
 </template>
+
+
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
 
 section {
-  background-color: $custom_white;
+  background-color: $black;
+  color: $white;
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
+
+  @include underline-on-hover;
 }
 
-h2, h3{
+h1, h3{
   font-family: 'VT323', sans-serif;  
+  color: $pink;
 }
 
 .items_contaneir {
