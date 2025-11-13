@@ -1,53 +1,43 @@
 <script>
+
+import projectsData from '../data/projects.json';
+
 export default {
   data() {
     return { 
-      
+      projects: projectsData
     }
   }
 }
 </script>
 
 <template>
-  <section>
-    <h2 class="py-5">
-      PROJECTS
-    </h2>
+  <section id="projects">
+    <div class="container">
+     <div class="row">
 
-    <!-- Cards container -->
-     <div class="d-flex justify-content-evenly">
-      <div class="card_c  p-2">
-        <div class="img_square">
-          <img src="" alt="">
+      <h1 class="py-5">
+        PROJECTS
+      </h1>
+        <!-- Progetto 1 -->
+        <div class="col-md-4 col-12 mb-4"
+        v-for="project in projects" 
+        :key="index">
+          <div class="card p-2">
+            <div class="img_square">
+              <img :src="project.immagine" :alt="project.nome">
+            </div>
+            <div>
+              <h4>{{ project.nome }}</h4>
+              <p>{{ project.descrizione }}</p>
+              <a :href="project.link" target="_blank">Visita progetto</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4>
-            PROGETTO 1
-          </h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam debitis aperiam itaque nobis consequuntur provident, iste eveniet eligendi porro voluptatem molestias inventore ipsam optio quo accusantium possimus officia. Doloremque, sequi.
-          </p>
-        </div>
-      </div>
 
-      <div class="card_c  p-2">
-        <div class="img_square">
-          <img src="" alt="">
-        </div>
-        <div>
-          <h4>
-            PROGETTO 1
-          </h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam debitis aperiam itaque nobis consequuntur provident, iste eveniet eligendi porro voluptatem molestias inventore ipsam optio quo accusantium possimus officia. Doloremque, sequi.
-          </p>
-        </div>
-      </div>
-      <div>
 
       </div>
-     </div>
-    <hr>
+    </div>
   </section>
 </template>
 
@@ -55,24 +45,40 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-  background-color: $custom_white;
+  background-image: url(../assets/images/pattern.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
   text-align: center;
+
+  @include underline-on-hover;
 }
 
-h2, h4 {
+h1, h4 {
   font-family: 'VT323', sans-serif;
+  color: $pink;
 }
 
-.card_c {
-  width: 500px;
+.card {
+  background-color: $white;
+  width: 400px;
   text-align: center;
 }
 
-.img_square {
-  background-color: $yellow;
+.img {
   width: 300px;
   height: 300px;
   text-align: center;
   padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: $pink;  
+
+  &:hover{
+    color: $black;
+  }
 }
 </style>
