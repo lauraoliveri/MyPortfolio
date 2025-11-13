@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <footer id="footer">
       <!-- Links  -->
       <div class="pt-2 text-center" id="linkss">
         <ul >
