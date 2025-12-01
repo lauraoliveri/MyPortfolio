@@ -29,19 +29,20 @@ export default {
         <!-- Link -->
         <div class="collapse navbar-collapse" id="mobileMenu">
           <ul class="navbar-nav w-100 d-flex justify-content-center flex-md-row text-center">
+            <li class="nav-item"><img src="/src/assets/images/white_pink_flower.svg" class="w_p_flower"></li>
             <li class="nav-item"><a class="nav-link fs-4 fw-semibold" href="#about">ABOUT</a></li>
             <li class="nav-item"><a class="nav-link fs-4 fw-semibold" href="#skills">SKILLS</a></li>
             <li class="nav-item"><a class="nav-link fs-4 fw-semibold" href="#projects">PROJECTS</a></li>
             <li class="nav-item"><a class="nav-link fs-4 fw-semibold" href="#footer">CONTACTS</a></li>
+            <li class="nav-item"><img src="/src/assets/images/white_pink_flower.svg" class="w_p_flower"></li>
           </ul>
         </div>
     </nav>
 
-    <div class="d-flex justify-content-center align-items-center" id="code">
+    <div class="d-flex justify-content-center align-items-center" id="hello">
       <h1>
-        function whoAmI() { <br>
-          return "Full Stack Web Developer"; <br>
-        }
+        Hello! I'm 
+        Laura!
 
       </h1>
     </div>
@@ -52,7 +53,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 #home {
-  background-color: $black;
   color: $white;
   width: 100%;
   min-height: 100vh;
@@ -61,18 +61,24 @@ export default {
 .navbar {
   background-color: $pink;
   text-align: center;
+  height: 50px;
 }
 
+.w_p_flower{
+  width: 30px;
+  border-top: 50px;
+}
 .content {
   height: 60px;
 }
 
-#code{
+#hello{
   height: 80vh;
   
   h1 {
-    font-family: 'VT323', sans-serif;
+    font-family: "League Gothic", sans-serif;
     color: $pink;
+    font-size: 100px;
   }
 }
 
@@ -85,15 +91,16 @@ ul {
 
     li {
         margin-right: 100px;
-        &:hover {
-          transform: scale(0.9);
-        }
 
         a {
-            text-decoration: none;
-            color: $black;
-            font-family: 'VT323', sans-serif;  
+          text-decoration: none;
+          color: $black;
+          font-family: 'VT323', sans-serif;  
+          &:hover {
+            transform: scale(0.9);
+          }
         }
+        
     }
      
 }

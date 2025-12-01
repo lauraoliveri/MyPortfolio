@@ -45,9 +45,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-  background-image: url(../assets/images/pattern.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
   width: 100%;
   height: 700px;
   text-align: center;
@@ -61,7 +59,7 @@ h1, h4 {
 }
 
 .card {
-  background-color: $white;
+  background-color: #1d131320;
   width: 400px;
   text-align: center;
 }

@@ -11,44 +11,66 @@ export default {
   }
 }
 </script>
-
 <template>
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h1 class="text-center mb-5">SKILLS</h1>
+  <section id="skills" class="py-5 px-3">
+    <div class="container-fluid">
 
       <!-- Skills -->
-      <div class="d-flex flex-wrap justify-content-center gap-4">
+      <div class="row g-4 justify-content-center">
+        <div class="col-8 col-sm-4 col-md-3 col-lg-6 d-flex justify-content-start">
+          <h1>
+            What I do:
+          </h1>
+        </div>
+        <div class="col-2 col-sm-4 col-md-3 col-lg-3 d-flex flex-column align-items-start">
+         <div>
+          Full-Stack
+         </div>
+        </div>
+        <div class="col-2 col-sm-4 col-md-3 col-lg-3 d-flex flex-column align-items-start">
+         <div>
+          Full-Stack
+         </div>
+        </div>
+      </div>
+
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+          <h1>
+            Skills:
+          </h1>
+        </div>
         <div
           v-for="skill in skills"
           :key="skill.name"
-          class="d-flex flex-column align-items-center skill_item"
-          style="flex: 1 1 calc(20% - 1rem);" 
+          class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex flex-column align-items-center"
         >
-          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2"/>
-          <p class="text-uppercase text-center">{{ skill.name }}</p>
+          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2" />
+          <p class="text-uppercase text-center mb-0">{{ skill.name }}</p>
         </div>
       </div>
 
-      <!-- Learning -->
-      <h3 class="text-center text-uppercase mt-5 mb-4">
-        Currently Learning:
-      </h3>
+     
+       <!-- Learning -->
+    <!-- 
+      <h3 class="text-center text-uppercase mt-5 mb-4">Currently Learning:</h3>
 
-      <div class="d-flex flex-wrap justify-content-center gap-4">
+      <div class="row g-4 justify-content-center">
         <div
           v-for="skill in currentlyLearning"
           :key="skill.name"
-          class="d-flex flex-column align-items-center skill_item"
-          style="flex: 1 1 calc(20% - 1rem);"
+          class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex flex-column align-items-center"
         >
-          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2"/>
-          <p class="text-uppercase text-center">{{ skill.name }}</p>
+          <img :src="skill.image" :alt="skill.name" class="skill_img mb-2" />
+          <p class="text-uppercase text-center mb-0">{{ skill.name }}</p>
         </div>
-      </div>
+      </div> 
+    --> 
     </div>
   </section>
 </template>
+
 
 
 
@@ -59,9 +81,7 @@ export default {
 section {
   background-color: $black;
   color: $white;
-  width: 100%;
   min-height: 100vh;
-  text-align: center;
 
   @include underline-on-hover;
 }
@@ -71,15 +91,13 @@ h1, h3{
   color: $pink;
 }
 
-.items_contaneir {
-  padding-left: 300px;
-  padding-right: 300px;
+.container-fluid{
+  background: #FD7E98;
+  background: linear-gradient(146deg, rgba(253, 126, 152, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-radius: 20px;
+  margin: 0;
 }
 
-.skill_item {
-  padding-right: 30px;
-  padding-bottom: 30px;
-}
 
 .skill_img {
   width: 100px;
