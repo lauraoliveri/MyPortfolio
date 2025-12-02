@@ -1,20 +1,20 @@
 [
   {
     "nome": "Tamaneko",
-    "immagine": "",
-    "descrizione": "Un gioco interattivo in Vue.js ispirato al Tamagotchi, dove puoi prenderti cura di un adorabile gattino virtuale.",
+    "immagine": "/projects/your-tamaneko.png",
+    "descrizione": "An interactive Vue.js game inspired by Tamagotchi, where you can take care of an adorable virtual kitten.",
     "link": "https://github.com/lauraoliveri/Tamaneko"
   },
   {
     "nome": "Deliveboo",
-    "immagine": "",
-    "descrizione": "Progetto di team sviluppato durante il corso Boolean: Deliveboo, una piattaforma completa per il food delivery con gestione ristoratori, ordini e pagamenti online.",
+    "immagine": "/projects/deliveboo.jpg",
+    "descrizione": "A team project developed during the Boolean course: Deliveboo, a complete food-delivery platform featuring restaurant management, order processing, and online payments.",
     "link": ""
   },
   {
     "nome": "SendCuteEcards",
-    "immagine": "",
-    "descrizione": "Un sito in Vue.js per inviare ecards simpatiche: scegli la tua card preferita e inviala via email in pochi clic.",
+    "immagine": "/projects/send-cutecards.png",
+    "descrizione": "A Vue.js website for sending fun ecards: choose your favorite card and send it by email in just a few clicks.",
     "link": ""
   }
 ]

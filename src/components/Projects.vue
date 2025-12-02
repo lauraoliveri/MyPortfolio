@@ -4,7 +4,7 @@ import projectsData from '../data/projects.json';
 
 export default {
   data() {
-    return { 
+    return {
       projects: projectsData
     }
   }
@@ -14,28 +14,33 @@ export default {
 <template>
   <section id="projects">
     <div class="container">
-     <div class="row">
+      <div class="row">
 
-      <h1 class="py-5">
-        PROJECTS
-      </h1>
-        <!-- Progetto 1 -->
-        <div class="col-md-4 col-12 mb-4"
-        v-for="project in projects" 
-        :key="index">
+        <!-- Title -->
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="pe-2 ">
+            <img src="/src/assets/images/flower.svg" alt="">
+          </div>
+          <h1 class="py-5 text-uppercase">
+            ⎯ PROJECTS
+          </h1>
+        </div>
+
+        <!-- Projects -->
+        <div class="col-md-4 col-12 mb-4" v-for="project in projects" :key="index">
           <div class="card p-2">
             <div class="img_square">
               <img :src="project.immagine" :alt="project.nome">
             </div>
-            <div>
-              <h4>{{ project.nome }}</h4>
-              <p>{{ project.descrizione }}</p>
-              <a :href="project.link" target="_blank">Visita progetto</a>
+            <div class="p-2">
+              <h3><a :href="project.link" target="_blank">
+                  {{ project.nome }}
+                </a></h3>
+              <p class="text-start">{{ project.descrizione }}</p>
+
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -50,32 +55,47 @@ section {
   height: 700px;
   text-align: center;
 
-  @include underline-on-hover;
 }
 
-h1, h4 {
+h1,
+h3 {
   font-family: 'VT323', sans-serif;
   color: $pink;
 }
 
 .card {
+  height: 400px;
   background-color: #1d131320;
   width: 400px;
   text-align: center;
 }
 
-.img {
-  width: 300px;
-  height: 300px;
+.img_square {
+
   text-align: center;
   padding: 10px;
+
+  img {
+    min-height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+p {
+  color: $white;
 }
 
 a {
   text-decoration: none;
-  color: $pink;  
+  color: $pink;
+  /* Neon shadow */
+  text-shadow:
+    0 0 8px rgba($pink, 0.6),
+    0 0 16px rgba($pink, 0.4),
+    0 0 24px rgba($white, 0.15);
 
-  &:hover{
+  &:hover {
     color: $black;
   }
 }
