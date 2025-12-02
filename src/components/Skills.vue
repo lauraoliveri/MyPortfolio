@@ -132,6 +132,11 @@ h1 {
   border-radius: 20px;
   text-align: center;
 
+  /* Neon shadow */
+  box-shadow:
+    0 0 8px rgba($pink, 0.6),
+    0 0 16px rgba($pink, 0.4),
+    0 0 24px rgba($white, 0.15);
 }
 
 .skills_c {
