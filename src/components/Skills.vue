@@ -12,6 +12,10 @@ export default {
 }
 </script>
 <template>
+  
+  <!-- Section divider -->
+  <img src="/src/assets/images/s-dividers/intersecting-wave-layers.svg" alt="">
+
   <section id="skills" class="py-5 px-3">
     <div class="container">
 
