@@ -27,7 +27,7 @@ export default {
         </div>
 
         <!-- Projects -->
-        <div class="col-md-4 col-12 mb-4" v-for="project in projects" :key="index">
+        <div class="col-md-4 col-12 mb-4 d-flex flex-column align-items-center" v-for="project in projects" :key="index">
           <div class="card p-2">
 
             <!-- Image -->
@@ -76,8 +76,10 @@ h3 {
 .card {
   height: 400px;
   background-color: #1d131320;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
+  margin: 0 auto; 
 }
 
 .img_square {
