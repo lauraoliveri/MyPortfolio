@@ -13,7 +13,7 @@ export default {
     <!-- Navbar with links -->
 
     <nav class="navbar navbar-expand-md py-3" data-bs-theme="dark">
-      <div class="px-3 fw-bold d-sm-none d-flex align-items-center">
+      <div class="px-3 fw-bold d-md-none d-flex align-items-center">
         <img src="/src/assets/images/white_pink_flower.svg" class="w_p_flower">
         <div class="d-flex align-items-center ps-2">
           Laura's Portfolio
@@ -104,6 +104,7 @@ export default {
 
 // 
 .navbar {
+width: 100%;
   background-color: $black;
   text-align: center;
   height: 70px;
@@ -129,8 +130,6 @@ ul {
   list-style: none;
 
   li {
-    margin-right: 100px;
-
     a {
       text-decoration: none;
       color: $pink;
@@ -272,10 +271,6 @@ Neon animation
     font-size: 70px;
   }
   
-  #home {
-    height: 200px;
-
-  }
 
 }
 </style>

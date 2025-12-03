@@ -48,7 +48,7 @@ export default {
         </div>
 
         <!-- Right part with pic -->
-        <div class="col-md-6 col-12 text-end">
+        <div class="col-md-6 col-12 text-center">
           <img src="/src/assets/images/me.png" alt="" class="polaroid">
         </div>
       </div>
@@ -68,7 +68,8 @@ section {
 }
 
 .polaroid {
-  width: 335px;
+  max-width: 335px; 
+  width: 100%; 
   padding-top: 20px;
   transform: rotate(5deg);
 }
