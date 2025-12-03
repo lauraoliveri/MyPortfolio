@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="contacts">
         <div class="container pb-5">
 
             <!-- Section Title -->
