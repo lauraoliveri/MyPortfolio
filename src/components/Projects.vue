@@ -29,16 +29,27 @@ export default {
         <!-- Projects -->
         <div class="col-md-4 col-12 mb-4" v-for="project in projects" :key="index">
           <div class="card p-2">
+
+            <!-- Image -->
             <div class="img_square">
-              <img :src="project.immagine" :alt="project.nome">
+              <img :src="project.image" :alt="project.name">
             </div>
             <div class="p-2">
-              <h3><a :href="project.link" target="_blank">
-                  {{ project.nome }}
-                </a></h3>
-              <p class="text-start">{{ project.descrizione }}</p>
+              <!-- Name -->
+              <h3>
+                {{ project.name }}
+              </h3>
 
+              <!-- Description -->
+              <p class="text-start">{{ project.description }}</p>
             </div>
+          </div>
+
+          <!-- Link to project -->
+          <div class="text-start">
+            <a :href="project.link">
+              <button type="button" class="btn btn-outline text-uppercase">SEE PROJECT</button>
+            </a>
           </div>
         </div>
       </div>
@@ -50,9 +61,8 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-
   width: 100%;
-  height: 700px;
+  min-height: 90vh;
   text-align: center;
 
 }
@@ -71,7 +81,6 @@ h3 {
 }
 
 .img_square {
-
   text-align: center;
   padding: 10px;
 
@@ -98,5 +107,22 @@ a {
   &:hover {
     color: $black;
   }
+}
+
+.btn-outline {
+  font-size: large;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  color: $white;
+
+
+  /* Neon shadow */
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+
+  }
+
 }
 </style>
