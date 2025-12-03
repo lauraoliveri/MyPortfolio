@@ -13,7 +13,7 @@ export default {
     <div class="container about_me py-5">
       <div class="row">
 
-        <!-- left part: description -->
+        <!-- Title -->
         <div class="col-md-6 col-12">
           <div class="d-flex align-items-center">
             <div class="pe-2 ">
@@ -24,7 +24,7 @@ export default {
             </h1>
           </div>
 
-          <!-- paragraph about me -->
+          <!-- Left part: Paragraph about me -->
           <p class=" pb-2">
             I’m a 22-year-old, curious and determined aspiring developer, always ready to learn and grow.<br><br>
             After fulfilling my childhood dream of working as a flight attendant, I discovered a new passion: computer
@@ -39,13 +39,15 @@ export default {
             online!:) <br><br>
           </p>
 
-          <!-- resume button -->
+          <!-- Resume button -->
           <div>
-            <button type="button" class="btn btn-outline text-uppercase">View Resume</button>
+            <a href="/other/LauraOliveriCV.pdf" download>
+              <button type="button" class="btn btn-outline text-uppercase">Resume</button>
+            </a>
           </div>
         </div>
 
-        <!-- right part with pic -->
+        <!-- Right part with pic -->
         <div class="col-md-6 col-12 text-end">
           <img src="/src/assets/images/me.png" alt="" class="polaroid">
         </div>
@@ -64,7 +66,6 @@ section {
   width: 100%;
   min-height: 90vh;
 }
-
 
 .polaroid {
   width: 335px;
@@ -106,7 +107,6 @@ section {
     background-color: $btn-outline-hover-bg;
     color: $btn-outline-hover-color;
     border-color: $btn-outline-hover-border;
-
   }
 
 }
