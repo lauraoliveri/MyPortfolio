@@ -12,71 +12,75 @@ export default {
 }
 </script>
 <template>
-  
+
   <!-- Section divider -->
   <img src="/src/assets/images/s-dividers/intersecting-wave-layers.svg" alt="">
 
   <section id="skills" class="py-5 px-3">
     <div class="container">
 
-      <div class="row justify-content-center align-items-end">
-        <div class="col-8 col-sm-4 col-md-3 col-lg-3">
+      <!-- Title -->
+      <div class="row justify-content-center align-items-end flex-wrap">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 g-4">
           <h1 class="fw-bolder">
             What I do:
           </h1>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <!-- Expertise pills -->
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Full-Stack
           </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Front-End
           </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Back-End
           </div>
         </div>
       </div>
 
+      <!-- Expertise pills pt2 -->
       <div class="row justify-content-center">
 
-        <div class="col-8 col-sm-4 col-md-3 col-lg-3">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Web Design
           </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Responsive Design
           </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             API Integration
           </div>
         </div>
       </div>
 
+        <!-- Skills -->
       <div class="row g-4 align-items-start skills_c">
 
-        <!-- TITOLO -->
+        <!-- Title -->
         <div class="col-12 col-lg-2">
           <h1 class="fw-bolder">Skills:</h1>
         </div>
 
-        <!-- ICONE -->
+        <!-- Skills icon + name -->
         <div class="col-12 col-lg-10">
           <div class="row g-4">
             <div v-for="skill in skills" :key="skill.name"
@@ -86,10 +90,7 @@ export default {
             </div>
           </div>
         </div>
-
       </div>
-
-
 
       <!-- Learning -->
       <!-- 
@@ -119,6 +120,7 @@ export default {
 
 section {
   color: $white;
+  min-height: 90vh;
 }
 
 h1 {
@@ -135,15 +137,22 @@ h1 {
   background-color: $pink;
   border-radius: 20px;
   text-align: center;
+  margin: 20px;
 
   /* Neon shadow */
   box-shadow:
     0 0 8px rgba($pink, 0.6),
     0 0 16px rgba($pink, 0.4),
     0 0 24px rgba($white, 0.15);
+
+  @media (max-width: 576px) {
+    max-width: 250px; 
+    margin: 30px;
+  }
 }
 
 .skills_c {
   padding-top: 130px;
 }
+
 </style>
