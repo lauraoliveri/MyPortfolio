@@ -36,8 +36,6 @@ export default {
         </div>
         <p class="copyrights text-center">
             © 2025 Laura Salvatrice Oliveri. All rights reserved. 
-            Design & development by me.  
-            Icons by FontAwesome.
         </p>
   </footer>
 </template>
