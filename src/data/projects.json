@@ -9,12 +9,12 @@
     "name": "Deliveboo",
     "image": "/projects/deliveboo.jpg",
     "description": "A team project developed during the Boolean course: Deliveboo, a complete food-delivery platform featuring restaurant management, order processing, and online payments.",
-    "link": ""
+    "link": "https://www.linkedin.com/posts/gianmaria-fadda-860834272_sono-entusiasta-di-condividere-il-progetto-ugcPost-7271888873973047297-76hr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADaMyOoBZUoqhNRGxEpr7oDtE7CTotqObtU"
   },
   {
     "name": "SendCuteEcards",
     "image": "/projects/send-cutecards.png",
     "description": "A Vue.js website for sending fun ecards: choose your favorite card and send it by email in just a few clicks.",
-    "link": ""
+    "link": "https://github.com/lauraoliveri/SendCuteCards-front-end"
   }
 ]
