@@ -41,11 +41,29 @@
       "image": "/icons/java.png"
     },
     {
+      "name": "Angular",
+      "image": "/icons/angular.png"
+    },
+    {
+      "name": "Spring Boot",
+      "image": "/icons/springboot.png"
+    },
+    {
+      "name": "Tailwind",
+      "image": "/icons/tailwind-css.png"
+    },
+    {
+      "name": "Docker",
+      "image": "/icons/docker.png"
+    },
+    {
+      "name": "Postman",
+      "image": "/icons/postman.png"
+    },
+    {
       "name": "Figma",
       "image": "/icons/figma.png"
     }
   ],
-  "currentlyLearning": [
-    
-  ]
+  "currentlyLearning": []
 }

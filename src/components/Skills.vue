@@ -61,7 +61,7 @@ export default {
 
         <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
-            Responsive Design
+            DB Management
           </div>
         </div>
 
