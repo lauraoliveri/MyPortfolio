@@ -19,15 +19,16 @@ export default {
         <!-- Title -->
         <div class="d-flex align-items-center justify-content-center">
           <div class="pe-2 ">
-            <img src="/src/assets/images/flower.svg" alt="">
+
           </div>
-          <h1 class="py-5 text-uppercase">
-            ⎯ PROJECTS
+          <h1 class="py-5 fw-bold">
+            Projects
           </h1>
         </div>
 
         <!-- Projects -->
-        <div class="col-md-4 col-12 mb-4 d-flex flex-column align-items-center" v-for="project in projects" :key="index">
+        <div class="col-md-4 col-12 mb-4 d-flex flex-column align-items-center" v-for="project in projects"
+          :key="index">
           <div class="card p-2">
 
             <!-- Image -->
@@ -36,7 +37,7 @@ export default {
             </div>
             <div class="p-2">
               <!-- Name -->
-              <h3>
+              <h3 class="text-start">
                 {{ project.name }}
               </h3>
 
@@ -64,50 +65,73 @@ section {
   width: 100%;
   min-height: 90vh;
   text-align: center;
-
 }
 
-h1,
+h1 {
+  // Title
+  color: white;
+}
+
 h3 {
+  // Projects names
   font-family: 'VT323', sans-serif;
   color: $pink;
+  letter-spacing: 1.5px;
 }
 
 .card {
+  width: 320px;
   height: 400px;
-  background-color: #1d131320;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  margin: 0 auto; 
+  margin: 15px;
+  border-radius: 24px;
+
+  // Glass Effect
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+
+  // Border and neon glow 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    // Hover animation
+    transform: translateY(-10px);
+    border-color: rgba(253, 126, 152, 0.5);
+    box-shadow: 0 0 25px rgba(253, 126, 152, 0.2);
+    background: rgba(255, 255, 255, 0.07) !important; // Brightens slightly on hover
+  }
 }
 
 .img_square {
-  text-align: center;
-  padding: 10px;
 
   img {
+
     min-height: 200px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
+    // Subtle glow for image inside 
+    filter: drop-shadow(0 0 10px rgba(253, 126, 152, 0.3));
   }
 }
 
 p {
+  // Projects description
   color: $white;
 }
 
 a {
   text-decoration: none;
   color: $pink;
-  /* Neon shadow */
+  // Neon shadow 
   text-shadow:
     0 0 8px rgba($pink, 0.6),
     0 0 16px rgba($pink, 0.4),
     0 0 24px rgba($white, 0.15);
 
   &:hover {
-    color: $black;
+    color: $deepPurple;
   }
 }
 

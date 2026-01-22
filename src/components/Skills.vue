@@ -13,9 +13,6 @@ export default {
 </script>
 <template>
 
-  <!-- Section divider -->
-  <img src="/src/assets/images/s-dividers/intersecting-wave-layers.svg" alt="">
-
   <section id="skills" class="py-5 px-3">
     <div class="container">
 
@@ -72,12 +69,12 @@ export default {
         </div>
       </div>
 
-        <!-- Skills -->
+      <!-- Skills -->
       <div class="row g-4 align-items-start skills_c">
 
         <!-- Title -->
         <div class="col-12 col-lg-2">
-          <h1 class="fw-bolder">Skills:</h1>
+          <h1 class="fw-bolder">Skills/Tools:</h1>
         </div>
 
         <!-- Skills icon + name -->
@@ -108,6 +105,10 @@ export default {
       </div> 
     -->
     </div>
+
+    <div class="divider">
+      . ݁₊ ⊹ . ݁˖ . ݁
+    </div>
   </section>
 </template>
 
@@ -124,7 +125,7 @@ section {
 }
 
 h1 {
-  color: $black;
+  color: $pink;
 }
 
 .skill_img {
@@ -132,21 +133,33 @@ h1 {
   padding-bottom: 10px;
 }
 
-.round_div {
-  width: 250px;
-  background-color: $pink;
-  border-radius: 20px;
-  text-align: center;
-  margin: 20px;
+$neonPink: #FD7E98;
 
-  /* Neon shadow */
+.round_div {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  margin: 10px;
+  min-width: 120px;
+  border: 1.5px solid $neonPink;
+  border-radius: 50px;
+
+  // Glass background 
+  background: rgba(253, 126, 152, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+
+  // Neon Shadow (Refined) 
   box-shadow:
-    0 0 8px rgba($pink, 0.6),
-    0 0 16px rgba($pink, 0.4),
-    0 0 24px rgba($white, 0.15);
+    0 0 10px rgba(253, 126, 152, 0.3),
+    inset 0 0 5px rgba(253, 126, 152, 0.2);
+
 
   @media (max-width: 576px) {
-    max-width: 250px; 
+    max-width: 250px;
     margin: 30px;
   }
 }
@@ -155,4 +168,17 @@ h1 {
   padding-top: 130px;
 }
 
+.divider {
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $pink;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 12px;
+  opacity: 0.4;
+  text-shadow: 0 0 15px rgba(253, 126, 152, 0.2);
+}
 </style>

@@ -17,10 +17,12 @@ export default {
         <div class="col-md-6 col-12">
           <div class="d-flex align-items-center">
             <div class="pe-2 ">
-              <img src="/src/assets/images/flower.svg" alt="">
+              <p>
+                ♡
+              </p>
             </div>
             <h1 class="text-uppercase">
-              ⎯ ABOUT ME
+              hi! i'm laura
             </h1>
           </div>
 
@@ -61,15 +63,15 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-  background-color: $black;
+  padding-top: 100px;
   color: $white;
   width: 100%;
   min-height: 90vh;
 }
 
 .polaroid {
-  max-width: 335px; 
-  width: 100%; 
+  max-width: 335px;
+  width: 100%;
   padding-top: 20px;
   transform: rotate(5deg);
 }
@@ -78,6 +80,7 @@ section {
   h1 {
     color: $pink;
     text-decoration: none;
+    letter-spacing: 1.5px;
     font-family: 'VT323', sans-serif;
   }
 
@@ -87,28 +90,18 @@ section {
 
 }
 
-// Button
-
 .btn-outline {
-  font-size: larger;
-  font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
-  color: $btn-outline-color;
-  background-color: $btn-outline-bg;
-  border: 2px solid $btn-outline-border;
-  border-radius: $btn-outline-border-radius;
-
-  /* Neon shadow */
-  box-shadow:
-    0 0 8px rgba($pink, 0.6),
-    0 0 16px rgba($pink, 0.4),
-    0 0 24px rgba($white, 0.15);
+  padding: 8px 25px;
+  border-radius: 50px;
+  color: $pink;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  border: 1px solid $pink;
 
   &:hover {
-    background-color: $btn-outline-hover-bg;
-    color: $btn-outline-hover-color;
-    border-color: $btn-outline-hover-border;
-  }
+    background-color: $pink;
+    color: #000000;
 
+  }
 }
 </style>
