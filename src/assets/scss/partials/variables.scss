@@ -1,8 +1,10 @@
 // Color palette
 
 $pink: #fd7e98;
-$white: #FAF9DC;
-$black: #1D1313;
+$white: #ffffff;
+$deepPurple: #2D112B;
+$glassPurple: rgba(45, 17, 43, 0.7);
+$blue: #00F5FF;
 
 /*
 Bootstrap
@@ -18,7 +20,7 @@ $btn-outline-color: $pink;         // text
 $btn-outline-bg: transparent;        // bg 
 $btn-outline-border:$pink;        // border
 $btn-outline-hover-bg:$pink;      // bg hover
-$btn-outline-hover-color: $black;      // text hover
+$btn-outline-hover-color: $deepPurple;      // text hover
 $btn-outline-hover-border:$pink;  // border hover
 
 // Other
