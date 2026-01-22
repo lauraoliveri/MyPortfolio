@@ -1,6 +1,6 @@
 <script>
 
-import Hero from './components/Hero.vue';
+import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
@@ -15,7 +15,7 @@ export default {
     }
   },
   components: {
-    Hero,
+    Navbar,
     About,
     Skills,
     Projects,
@@ -31,7 +31,7 @@ export default {
 
 <template>
   <div>
-    <Hero/>
+    <Navbar/>
     <About/>
     <Contacts/>
     <Skills/>
@@ -62,6 +62,7 @@ body {
 
 
 *::selection {
-  background-color: $pink;
+  background-color: $blue; /* Ciano elettrico */
+  color: #000000;
 }
 </style>
