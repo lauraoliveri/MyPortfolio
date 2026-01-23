@@ -27,18 +27,22 @@ export default {
           </div>
 
           <!-- Left part: Paragraph about me -->
-          <p class=" pb-2">
-            I’m a 22-year-old, curious and determined aspiring developer, always ready to learn and grow.<br><br>
-            After fulfilling my childhood dream of working as a flight attendant, I discovered a new passion: computer
-            science.<br>
-            This led me to complete an intensive 700-hour course in <strong>front-end</strong> and
-            <strong>back-end</strong> development,
-            where I gained solid skills and a strong desire to keep learning. I also completed a course in Java, further
-            expanding my programming skillset.<br><br>
-            <span class="text-decoration-underline">I’m now looking for my first professional opportunity in IT</span>,
-            excited to apply my skills, contribute to real projects, and continue growing as a web developer.<br>
-            In my free time, I enjoy music, playing guitar, reading, gaming… and watching too many adorable cat videos
-            online!:) <br><br>
+          <p class="pb-2">
+            I’m a 22-year-old, <span class="text-pink fw-bolder">curious and determined</span> aspiring developer, always
+            ready to learn and grow. 🚀<br><br>
+
+            After fulfilling my childhood dream of working as a flight attendant, I discovered a new passion:
+            computer science. 💻<br>
+            This led me to complete an intensive 700-hour course in <span class="text-pink fw-bolder">front-end</span> and
+            <span class="text-pink fw-bolder">back-end</span> development, where I gained solid skills and a strong desire to
+            keep learning. I also completed a course in Java, further expanding my programming skillset.<br><br>
+
+            <span class="text-decoration-underline fw-bolder">I’m now looking for my first professional opportunity in
+              IT</span>, excited to apply my skills, contribute to real projects, and continue growing as a
+            developer. 🌟<br><br>
+
+            In my free time, I enjoy music, playing guitar, reading, gaming… and watching too many
+            adorable cat videos online!
           </p>
 
           <!-- Resume button -->
@@ -103,5 +107,9 @@ section {
     color: #000000;
 
   }
+}
+
+.text-pink {
+  color: $pink;
 }
 </style>
