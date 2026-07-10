@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+body > * {
+  position: relative;
+  z-index: 2;
+}
 
 /* Light Bulbs  */
 body::before {

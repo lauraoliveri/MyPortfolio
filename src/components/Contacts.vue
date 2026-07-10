@@ -31,7 +31,7 @@ export default {
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                             </svg>
 
-                            <div class="round_div">Email</div>
+                            <div class="social_div">Email</div>
                             <p><a href="mailto:laurasalvatrice9@gmail.com">laurasalvatrice9@gmail.com</a></p>
                         </div>
                     </div>
@@ -48,13 +48,13 @@ export default {
                                 <circle cx="4" cy="4" r="2" />
                             </svg>
 
-                            <div class="round_div">Linkedin</div>
+                            <div class="social_div">Linkedin</div>
                             <p><a href="https://www.linkedin.com/..." target="_blank">Laura Salvatrice Oliveri</a></p>
                         </div>
                     </div>
 
                     <!-- Social 3 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 pb-5">
                         <div class="contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#FD7E98" stroke-width="2" stroke-linecap="round"
@@ -64,7 +64,7 @@ export default {
                                 <path d="M9 18c-4.51 2-5-2-7-2" />
                             </svg>
 
-                            <div class="round_div">Github</div>
+                            <div class="social_div">Github</div>
                             <p><a href="https://github.com/lauraoliveri" target="_blank">github.com/lauraoliveri</a></p>
                         </div>
                     </div>
@@ -73,9 +73,7 @@ export default {
         </div>
 
         <!-- Divider -->
-        <div class="divider">
-            . ݁₊ ⊹ . ݁˖ . ݁
-        </div>
+        <hr class="divider"></hr>
 
     </section>
 </template>
@@ -101,7 +99,7 @@ section {
         filter: drop-shadow(0 0 5px rgba(253, 126, 152, 0.4));
     }
 
-    .round_div {
+    .social_div {
         color: $pink;
         font-size: 0.85rem;
         font-weight: bold;
@@ -129,17 +127,19 @@ section {
     }
 }
 
+// Divider
 .divider {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $pink;
-    font-family: monospace;
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 5px;
-    opacity: 0.4;
-    text-shadow: 0 0 15px rgba(253, 126, 152, 0.2);
+  width: 50%;          
+  height: 1px;      
+  margin: 0 auto;      
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    $pink,            
+    transparent
+  );
+  box-shadow: 0 0 10px rgba(253, 126, 152, 0.4);
+  opacity: 0.6;
+  border: none;
 }
 </style>

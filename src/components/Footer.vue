@@ -88,10 +88,11 @@ footer {
 }
 
 .copyrights {
-  color: $pink;
+  color: $white;
   font-size: 8px;
   opacity: 0.5;
   padding-top: 20px;
+  user-select: none;
 }
 
 // Socials icons

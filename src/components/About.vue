@@ -95,17 +95,48 @@ section {
 }
 
 .btn-outline {
-  padding: 8px 25px;
-  border-radius: 50px;
-  color: $pink;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  padding: $btn-outline-padding-y $btn-outline-padding-x;
+  border-radius: $btn-outline-border-radius;
+  transition: $btn-outline-transition;
   letter-spacing: 1.5px;
-  background-color: transparent;
-  border: 1px solid $pink;
+  color: $white !important;
+  background-color: transparent !important;
+  border: 1.5px solid transparent !important; 
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 
-  &:hover {
-    background-color: $pink;
-    color: #000000;
+  // Aurora border effect
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: $btn-outline-border-radius;
+    padding: 1.5px; 
 
+    background: $aurora-gradient;
+    background-size: 200% auto;
+    background-position: 0% center;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            
+    transition: background-position 0.4s ease;
+    z-index: -1;
+  }
+
+  // Clear background
+  &:hover, &.hover {
+    color: $white !important;
+    background-color: transparent !important;
+    box-shadow: 0 0 20px rgba(#d91b8f, 0.35); 
+    transform: translateY(-1px);
+
+    &::before {
+      background-position: 100% center; 
+  }
   }
 }
 

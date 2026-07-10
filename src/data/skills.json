@@ -1,6 +1,22 @@
 {
   "skills": [
     {
+      "name": "Java",
+      "image": "/icons/java.png"
+    },
+    {
+      "name": "Spring Boot",
+      "image": "/icons/springboot.png"
+    },
+        {
+      "name": "MySQL",
+      "image": "/icons/mysql.png"
+    },
+    {
+      "name": "Postman",
+      "image": "/icons/postman.png"
+    },
+    {
       "name": "HTML5",
       "image": "/icons/html5.png"
     },
@@ -23,46 +39,6 @@
     {
       "name": "Bootstrap",
       "image": "/icons/bootstrap.png"
-    },
-    {
-      "name": "PHP",
-      "image": "/icons/php.png"
-    },
-    {
-      "name": "Laravel",
-      "image": "/icons/laravel.png"
-    },
-    {
-      "name": "MySQL",
-      "image": "/icons/mysql.png"
-    },
-    {
-      "name": "Java",
-      "image": "/icons/java.png"
-    },
-    {
-      "name": "Angular",
-      "image": "/icons/angular.png"
-    },
-    {
-      "name": "Spring Boot",
-      "image": "/icons/springboot.png"
-    },
-    {
-      "name": "Tailwind",
-      "image": "/icons/tailwind-css.png"
-    },
-    {
-      "name": "Docker",
-      "image": "/icons/docker.png"
-    },
-    {
-      "name": "Postman",
-      "image": "/icons/postman.png"
-    },
-    {
-      "name": "Figma",
-      "image": "/icons/figma.png"
     }
   ],
   "currentlyLearning": []

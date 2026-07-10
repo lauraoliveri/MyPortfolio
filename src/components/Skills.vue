@@ -13,10 +13,10 @@ export default {
 </script>
 <template>
 
-  <section id="skills" class="py-5 px-3">
+  <section id="skills" class="px-3">
     <div class="container">
 
-      <!-- Title -->
+      <!-- 
       <div class="row justify-content-center align-items-end flex-wrap">
         <div class="col-12 col-sm-4 col-md-3 col-lg-3 g-4">
           <h1 class="fw-bolder">
@@ -24,7 +24,7 @@ export default {
           </h1>
         </div>
 
-        <!-- Expertise pills -->
+        
         <div class="col-12 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
           <div class="round_div px-5 py-1 mb-2 me-2">
             Full-Stack
@@ -44,7 +44,7 @@ export default {
         </div>
       </div>
 
-      <!-- Expertise pills pt2 -->
+      
       <div class="row justify-content-center">
 
         <div class="col-12 col-sm-4 col-md-3 col-lg-3">
@@ -68,20 +68,21 @@ export default {
           </div>
         </div>
       </div>
+      -->
 
       <!-- Skills -->
-      <div class="row g-4 align-items-start skills_c">
+      <div class="row align-items-start skills_c">
 
         <!-- Title -->
         <div class="col-12 col-lg-2">
-          <h1 class="fw-bolder">Skills/Tools:</h1>
+          <h1 class="fw-bolder justify-content-center">Skills/Tools:</h1>
         </div>
 
         <!-- Skills icon + name -->
         <div class="col-12 col-lg-10">
           <div class="row g-4">
             <div v-for="skill in skills" :key="skill.name"
-              class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+              class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex flex-column align-items-center skill_item">
               <img :src="skill.image" :alt="skill.name" class="skill_img mb-2" />
               <p class="text-uppercase text-center mb-0">{{ skill.name }}</p>
             </div>
@@ -105,10 +106,6 @@ export default {
       </div> 
     -->
     </div>
-
-    <div class="divider">
-      . ݁₊ ⊹ . ݁˖ . ݁
-    </div>
   </section>
 </template>
 
@@ -121,11 +118,11 @@ export default {
 
 section {
   color: $white;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 h1 {
-  color: $pink;
+  color: $white;
 }
 
 .skill_img {
@@ -133,52 +130,12 @@ h1 {
   padding-bottom: 10px;
 }
 
-$neonPink: #FD7E98;
-
-.round_div {
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 24px;
-  margin: 10px;
-  min-width: 120px;
-  border: 1.5px solid $neonPink;
-  border-radius: 50px;
-
-  // Glass background 
-  background: rgba(253, 126, 152, 0.05);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
-
-  // Neon Shadow (Refined) 
-  box-shadow:
-    0 0 10px rgba(253, 126, 152, 0.3),
-    inset 0 0 5px rgba(253, 126, 152, 0.2);
-
-
-  @media (max-width: 576px) {
-    max-width: 250px;
-    margin: 30px;
-  }
-}
-
 .skills_c {
   padding-top: 130px;
 }
 
-.divider {
-  height: 270px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $pink;
-  font-family: monospace;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 12px;
-  opacity: 0.4;
-  text-shadow: 0 0 15px rgba(253, 126, 152, 0.2);
+.skill_item {
+  user-select: none;
 }
+
 </style>

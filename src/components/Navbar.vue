@@ -59,11 +59,10 @@ export default {
   left: 0; right: 0;     
   z-index: 1000;
   position: fixed;
-  background: rgba(253, 126, 152, 0.05) !important; 
+  background: rgba(230, 205, 210, 0.05) !important; 
   backdrop-filter: blur(12px) saturate(150%);
   -webkit-backdrop-filter: blur(12px) saturate(150%);
-  border: 1px solid rgba(253, 126, 152, 0.25); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.205);
 
 }
 
@@ -88,13 +87,16 @@ ul {
   li {
     a {
       text-decoration: none;
-      letter-spacing: 1.5px; 
-      color: $pink;
+      letter-spacing: 2px; 
+      color: rgba($white, 0.9);
       font-family: 'VT323', sans-serif;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease, text-shadow 0.2s ease;
+      user-select: none;
 
       &:hover {
         transform: scale(0.9);
         color: $white;
+        transform: translateY(-1px) scale(1.03);
       }
     }
 
