@@ -13,14 +13,14 @@ export default {
 
 <template>
   <section id="projects">
+    <!-- Divider -->
+    <hr class="divider"></hr>
+
     <div class="container">
       <div class="row">
 
         <!-- Title -->
         <div class="d-flex align-items-center justify-content-center">
-          <div class="pe-2 ">
-
-          </div>
           <h1 class="py-5 fw-bold">
             Projects
           </h1>
@@ -37,9 +37,9 @@ export default {
             </div>
             <div class="p-2">
               <!-- Name -->
-              <h3 class="text-start">
+              <h4 class="text-start">
                 {{ project.name }}
-              </h3>
+              </h4>
 
               <!-- Description -->
               <p class="text-start">{{ project.description }}</p>
@@ -47,11 +47,11 @@ export default {
           </div>
 
           <!-- Link to project -->
-          <div class="text-start">
+          <!-- <div class="text-start">
             <a :href="project.link">
               <button type="button" class="btn btn-outline text-uppercase">SEE PROJECT</button>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -72,18 +72,18 @@ h1 {
   color: white;
 }
 
-h3 {
+h4 {
   // Projects names
   font-family: 'VT323', sans-serif;
   color: $pink;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .card {
-  width: 320px;
-  height: 400px;
+  width: 300px;
+  height: 350px;
   margin: 15px;
-  border-radius: 24px;
+  border-radius: 15px;
 
   // Glass Effect
   background: rgba(255, 255, 255, 0.04) !important;
@@ -98,16 +98,15 @@ h3 {
   &:hover {
     // Hover animation
     transform: translateY(-10px);
-    border-color: rgba(253, 126, 152, 0.5);
     box-shadow: 0 0 25px rgba(253, 126, 152, 0.2);
-    background: rgba(255, 255, 255, 0.07) !important; // Brightens slightly on hover
+    background: rgba(255, 255, 255, 0.07) !important; 
   }
+
 }
 
 .img_square {
 
   img {
-
     min-height: 200px;
     width: 100%;
     border-radius: 10px;
@@ -150,5 +149,21 @@ a {
 
   }
 
+}
+
+// Divider
+.divider {
+  width: 50%;          
+  height: 1px;      
+  margin: 0 auto;      
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    $pink,            
+    transparent
+  );
+  box-shadow: 0 0 10px rgba(253, 126, 152, 0.4);
+  opacity: 0.6;
+  border: none;
 }
 </style>

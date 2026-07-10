@@ -62,7 +62,7 @@ body {
 
 
 *::selection {
-  background-color: $blue; /* Ciano elettrico */
+  background-color: $pink; /* Ciano elettrico */
   color: #000000;
 }
 </style>
