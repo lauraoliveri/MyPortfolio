@@ -1,23 +1,72 @@
 /* 
     GENERAL
 */
-body {
-  background-color: #0F050E; 
-  background-attachment: fixed;
-  background: 
-    radial-gradient(circle at 0% 0%, rgba(253, 126, 152, 0.15) 0%, transparent 40%), 
-    radial-gradient(circle at 100% 100%, rgba(45, 17, 43, 0.5) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(15, 5, 14, 1) 0%, #0F050E 100%);
 
+:root {
+  --bg-dark: #050714;
+  --text-white: #ffffff;
+  --bulb-amber-peach: rgba(255, 158, 125, 0.45); 
+  --bulb-warm-pink: rgba(15, 60, 180, 0.55);     
+  --bulb-coral-red: rgba(225, 25, 70, 0.55);    
+  --font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; 
+  background-color: var(--bg-dark) !important;
+}
+
+body {
+  font-family: var(--font-system);
+  color: var(--text-white);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Light Bulbs  */
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  opacity: 0.03; 
+  inset: 0%; 
   pointer-events: none;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   z-index: 1;
+
+  background: 
+    radial-gradient(circle at 18% 22%, var(--bulb-amber-peach) 0%, rgba(255, 158, 125, 0.05) 18%, transparent 45%),
+    radial-gradient(circle at 22% 55%, var(--bulb-warm-pink) 0%, rgba(15, 60, 180, 0.05) 22%, transparent 50%),
+    radial-gradient(circle at 82% 48%, var(--bulb-coral-red) 0%, rgba(225, 25, 70, 0.05) 25%, transparent 55%);
+
+  filter: blur(32px) saturate(1.6);
+  opacity: 0.95;
+  animation: defined-bulb-motion 22s ease-in-out infinite alternate;
+  transform: translateZ(0);
+}
+
+/* Animation*/
+@keyframes defined-bulb-motion {
+  0% {
+    transform: translate3d(-1%, -1%, 0) scale(0.98);
+  }
+  50% {
+    transform: translate3d(1%, 1.5%, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(-0.5%, 2%, 0) scale(0.97);
+  }
+}
+
+/* Noise Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background: url("https://grainy-gradients.vercel.app/noise.svg");
+  background-size: 150px 150px;
+  opacity: 0.02;
+  mix-blend-mode: overlay;
 }
