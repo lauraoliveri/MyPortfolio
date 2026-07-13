@@ -12,7 +12,7 @@ export default {
   <div class="container-fluid px-0" id="home">
 
     <!-- Navbar with links -->
-    <nav class="navbar navbar-expand-md py-3" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md" data-bs-theme="dark">
       <div class="px-3 fw-bold d-md-none d-flex align-items-center">
         <div class="d-flex align-items-center ps-2">
           Laura's Portfolio
@@ -28,12 +28,10 @@ export default {
       <!-- Link for navigating -->
       <div class="collapse navbar-collapse" id="mobileMenu">
         <ul class="navbar-nav w-100 d-flex justify-content-evenly flex-md-row text-center align-items-center">
-          <li class="nav-item d-md-none">❀</li>
           <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-uppercase" href="#about">ABOUT</a></li>
           <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-uppercase" href="#skills">SKILLS</a></li>
           <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-uppercase" href="#projects">PROJECTS</a></li>
           <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-uppercase" href="#contacts">CONTACTS</a></li>
-          <li class="nav-item d-md-none">❀</li>
         </ul>
       </div>
       
@@ -51,33 +49,27 @@ export default {
 }
 
 .navbar {
-  width: 70%;            
-  max-width: 1200px;      
-  margin: 25px auto;      
-  border-radius: 50px;    
-  height: 50px;
-  left: 0; right: 0;     
-  z-index: 1000;
   position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  width: 90%;
+  min-height: 50px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 20px;
   background: rgba(230, 205, 210, 0.05) !important; 
   backdrop-filter: blur(12px) saturate(150%);
   -webkit-backdrop-filter: blur(12px) saturate(150%);
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.205);
-
 }
 
-// Mobile navbar
-.navbar-collapse {
-  &.collapse.show {
-   
-    background: rgba(26, 11, 30, 0.98) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin-top: 15px;
-    padding: 20px;
-    border: 1px solid rgba($pink, 0.5); 
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+// Desktop
+@media (min-width: 767px) {
+  .navbar {
+    width: 90%;
+    border-radius: 50px; 
+    height: 50px;
   }
 }
 
