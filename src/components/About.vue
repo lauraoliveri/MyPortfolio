@@ -67,10 +67,10 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-  padding-top: 100px;
+  padding-top: 150px;
   color: $white;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .polaroid {
