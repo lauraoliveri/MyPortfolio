@@ -13,7 +13,7 @@ export default {
 </script>
 <template>
 
-  <section id="skills" class="px-3">
+  <section id="skills">
     <div class="container">
 
       <!-- 
@@ -118,7 +118,8 @@ export default {
 
 section {
   color: $white;
-  min-height: 70vh;
+  min-height: 40vh;
+
 }
 
 h1 {
@@ -131,7 +132,8 @@ h1 {
 }
 
 .skills_c {
-  padding-top: 130px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .skill_item {

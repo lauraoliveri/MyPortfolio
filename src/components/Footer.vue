@@ -14,7 +14,7 @@ export default {
     <div class="text-center" id="icon">
 
       <!-- Divider -->
-      <hr class="footer-divider"></hr>
+      <hr class="footer-divider mt-5"></hr>
 
       <!-- Message -->
       <div class=" p-5">

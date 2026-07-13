@@ -14,7 +14,7 @@ export default {
 <template>
   <section id="projects">
     <!-- Divider -->
-    <hr class="divider"></hr>
+    <hr class="divider mb-5"></hr>
 
     <div class="container">
       <div class="row">
@@ -63,7 +63,7 @@ export default {
 
 section {
   width: 100%;
-  min-height: 90vh;
+  min-height: 70vh;
   text-align: center;
 }
 
