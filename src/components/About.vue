@@ -55,7 +55,7 @@ export default {
 
         <!-- Right part with pic -->
         <div class="col-md-6 col-12 text-center">
-          <img src="/src/assets/images/me.png" alt="" class="polaroid">
+          <img src="/src/assets/images/me.jpg" alt="" class="polaroid">
         </div>
       </div>
 
